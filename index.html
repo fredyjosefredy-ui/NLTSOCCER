@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NLT Soccer | Next Level Training</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body{
+background:black;
+color:white;
+line-height:1.6;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.75);
+backdrop-filter: blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:22px;
+font-size:15px;
+opacity:.85;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+/* HERO */
+#hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:140px 20px 80px;
+background:
+linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.85)),
+url("Image 74.jpg") center/cover;
+}
+
+.logo-wrap{
+margin-bottom:22px;
+}
+
+.main-logo{
+width:140px;
+filter:drop-shadow(0 10px 25px rgba(0,0,0,.6));
+}
+
+h1{
+font-size:42px;
+letter-spacing:1px;
+margin-bottom:12px;
+}
+
+.hero-sub{
+opacity:.85;
+max-width:550px;
+font-size:17px;
+margin-bottom:26px;
+}
+
+.btn{
+background:#d90429;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff1f45;
+transform:translateY(-2px);
+}
+
+/* SECTIONS */
+section{
+padding:80px 8%;
+}
+
+.section-title{
+font-size:30px;
+margin-bottom:30px;
+}
+
+/* WHAT WE OFFER */
+.offer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.offer-card{
+background:#111;
+padding:24px;
+border-radius:12px;
+border:1px solid #222;
+transition:.3s;
+}
+
+.offer-card:hover{
+border-color:#d90429;
+transform:translateY(-3px);
+}
+
+.offer-card h3{
+margin-bottom:8px;
+color:#ff304f;
+}
+
+/* PATHWAY */
+#pathway{
+background:#050505;
+text-align:center;
+}
+
+.pathway-text{
+max-width:650px;
+margin:auto;
+opacity:.85;
+}
+
+/* GALLERY */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:16px;
+}
+
+.gallery-item{
+overflow:hidden;
+border-radius:10px;
+}
+
+.gallery-item img{
+width:100%;
+height:240px;
+object-fit:cover;
+transition:.35s;
+}
+
+.gallery-item img:hover{
+transform:scale(1.05);
+}
+
+/* STATS */
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+text-align:center;
+gap:30px;
+}
+
+.stat-number{
+font-size:36px;
+color:#ff304f;
+font-weight:700;
+}
+
+/* CONTACT */
+#contact{
+background:#050505;
+text-align:center;
+}
+
+.contact-box{
+max-width:420px;
+margin:auto;
+}
+
+input{
+width:100%;
+padding:14px;
+margin-bottom:12px;
+border-radius:6px;
+border:none;
+background:#111;
+color:white;
+}
+
+footer{
+text-align:center;
+padding:30px;
+font-size:14px;
+opacity:.6;
+}
+
+@media(max-width:600px){
+
+h1{
+font-size:32px;
+}
+
+.main-logo{
+width:115px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div style="font-weight:700;">NLT Soccer</div>
+
+<div>
+<a href="#offer">Training</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section id="hero">
+
+<div class="logo-wrap">
+<img src="Image 81.jpg" class="main-logo">
+</div>
+
+<h1>NEXT LEVEL TRAINING</h1>
+
+<p class="hero-sub">
+Serious training for serious players.
+Private and group sessions built for players pursuing college and pro pathways.
+</p>
+
+<a href="#contact" class="btn">Book Session</a>
+
+</section>
+
+
+
+<!-- WHAT WE OFFER -->
+
+<section id="offer">
+
+<h2 class="section-title">What We Offer</h2>
+
+<div class="offer-grid">
+
+<div class="offer-card">
+<h3>Private Training</h3>
+<p>1 on 1 sessions focused on technical development, speed of play, and confidence.</p>
+</div>
+
+<div class="offer-card">
+<h3>Group Sessions</h3>
+<p>Small group environment designed to simulate game speed and decision making.</p>
+</div>
+
+<div class="offer-card">
+<h3>Position Specific</h3>
+<p>Training tailored to attacking players, midfielders, defenders, and finishing.</p>
+</div>
+
+<div class="offer-card">
+<h3>Elite Pathway</h3>
+<p>Guidance and development for players pursuing college and pro opportunities.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PATHWAY -->
+
+<section id="pathway">
+
+<h2 class="section-title">College & Pro Pathway</h2>
+
+<p class="pathway-text">
+
+NLT Soccer is built for players who want to compete at the next level.
+Sessions emphasize game realism, decision making speed, and confidence under pressure.
+
+</p>
+
+</section>
+
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">Training</h2>
+
+<div class="gallery-grid" id="galleryGrid"></div>
+
+</section>
+
+
+
+<!-- STATS -->
+
+<section>
+
+<div class="stats">
+
+<div>
+<div class="stat-number">100+</div>
+Players Trained
+</div>
+
+<div>
+<div class="stat-number">5+</div>
+Years Experience
+</div>
+
+<div>
+<div class="stat-number">24/7</div>
+Work Ethic
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Start Training</h2>
+
+<div class="contact-box">
+
+<input placeholder="Name">
+
+<input placeholder="Email">
+
+<input placeholder="Phone">
+
+<a class="btn">Request Session</a>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+© 2026 NLT Soccer
+
+</footer>
+
+
+
+<script>
+
+/* GALLERY AUTO LOAD */
+
+const galleryImages = [
+
+"Image 74.jpg",
+"Image 75.jpg",
+"Image 76.jpg",
+"Image 77.jpg",
+"Image 78.jpg",
+"Image 79.jpg",
+"Image 80.jpg",
+"Image 82.jpg"
+
+];
+
+const galleryGrid = document.getElementById("galleryGrid");
+
+galleryImages.forEach(fileName => {
+
+const item = document.createElement("div");
+item.className = "gallery-item";
+
+const img = document.createElement("img");
+
+img.src = fileName;
+
+img.onerror = function(){
+item.remove();
+}
+
+item.appendChild(img);
+
+galleryGrid.appendChild(item);
+
+});
+
+</script>
+
+
+</body>
+</html>
